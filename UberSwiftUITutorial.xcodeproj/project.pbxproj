@@ -12,6 +12,7 @@
 		BEA175C929DF294A0093BF1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */; };
 		BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175D629DF2F910093BF1E /* HomeView.swift */; };
 		BEA175D929DF50680093BF1E /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175D829DF50680093BF1E /* UberMapViewRepresentable.swift */; };
+		BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175DA29DF567D0093BF1E /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEA175D629DF2F910093BF1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BEA175D829DF50680093BF1E /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		BEA175DA29DF567D0093BF1E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		BEA175D029DF2D1C0093BF1E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				BEA175DA29DF567D0093BF1E /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
 				BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */,
 				BEA175D929DF50680093BF1E /* UberMapViewRepresentable.swift in Sources */,
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
