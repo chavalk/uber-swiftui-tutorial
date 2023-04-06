@@ -93,6 +93,8 @@
 		BEA175D229DF2D230093BF1E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BEA175D529DF2EDB0093BF1E /* ViewModel */,
+				BEA175D429DF2ED80093BF1E /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -102,6 +104,20 @@
 			children = (
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		BEA175D429DF2ED80093BF1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEA175D529DF2EDB0093BF1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
