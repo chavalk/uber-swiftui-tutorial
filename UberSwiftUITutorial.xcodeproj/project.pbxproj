@@ -56,7 +56,6 @@
 				BEA175D129DF2D200093BF1E /* Extensions */,
 				BEA175D029DF2D1C0093BF1E /* Managers */,
 				BEA175CF29DF2D180093BF1E /* Models */,
-				BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */,
 				BEA175C529DF294A0093BF1E /* Assets.xcassets */,
 				BEA175C729DF294A0093BF1E /* Preview Content */,
 			);
@@ -104,6 +103,7 @@
 		BEA175D329DF2D280093BF1E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
