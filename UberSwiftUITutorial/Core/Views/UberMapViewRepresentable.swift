@@ -28,3 +28,15 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         
     }
 }
+
+extension UberMapViewRepresentable {
+    
+    class MapCoordinator: NSObject, MKMapViewDelegate {
+        let parent: UberMapViewRepresentable
+        
+        init(parent: UberMapViewRepresentable) {
+            self.parent = parent
+            super.init()
+        }
+    }
+}
