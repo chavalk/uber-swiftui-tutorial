@@ -51,6 +51,11 @@
 		BEA175C029DF29470093BF1E /* UberSwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				BEA175D329DF2D280093BF1E /* App */,
+				BEA175D229DF2D230093BF1E /* Core */,
+				BEA175D129DF2D200093BF1E /* Extensions */,
+				BEA175D029DF2D1C0093BF1E /* Managers */,
+				BEA175CF29DF2D180093BF1E /* Models */,
 				BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */,
 				BEA175C329DF29470093BF1E /* ContentView.swift */,
 				BEA175C529DF294A0093BF1E /* Assets.xcassets */,
@@ -65,6 +70,41 @@
 				BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEA175CF29DF2D180093BF1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEA175D029DF2D1C0093BF1E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BEA175D129DF2D200093BF1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEA175D229DF2D230093BF1E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BEA175D329DF2D280093BF1E /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
