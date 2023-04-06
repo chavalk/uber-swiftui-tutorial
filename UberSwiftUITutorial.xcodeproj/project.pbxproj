@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */; };
-		BEA175C429DF29470093BF1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175C329DF29470093BF1E /* ContentView.swift */; };
 		BEA175C629DF294A0093BF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA175C529DF294A0093BF1E /* Assets.xcassets */; };
 		BEA175C929DF294A0093BF1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		BEA175BE29DF29470093BF1E /* UberSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSwiftUITutorialApp.swift; sourceTree = "<group>"; };
-		BEA175C329DF29470093BF1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEA175C529DF294A0093BF1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +55,6 @@
 				BEA175D029DF2D1C0093BF1E /* Managers */,
 				BEA175CF29DF2D180093BF1E /* Models */,
 				BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */,
-				BEA175C329DF29470093BF1E /* ContentView.swift */,
 				BEA175C529DF294A0093BF1E /* Assets.xcassets */,
 				BEA175C729DF294A0093BF1E /* Preview Content */,
 			);
@@ -177,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA175C429DF29470093BF1E /* ContentView.swift in Sources */,
 				BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
