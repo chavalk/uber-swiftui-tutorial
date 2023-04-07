@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */; };
+		BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A647929E08EA200EC963E /* MapViewActionButton.swift */; };
 		BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */; };
 		BEA175C629DF294A0093BF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA175C529DF294A0093BF1E /* Assets.xcassets */; };
 		BEA175C929DF294A0093BF1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA175C829DF294A0093BF1E /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
+		BE4A647929E08EA200EC963E /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
 		BEA175BE29DF29470093BF1E /* UberSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA175C129DF29470093BF1E /* UberSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		BEA175C529DF294A0093BF1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				BEA175D629DF2F910093BF1E /* HomeView.swift */,
 				BEA175D829DF50680093BF1E /* UberMapViewRepresentable.swift */,
+				BE4A647929E08EA200EC963E /* MapViewActionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
+				BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */,
 				BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */,
 				BEA175D929DF50680093BF1E /* UberMapViewRepresentable.swift in Sources */,
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
