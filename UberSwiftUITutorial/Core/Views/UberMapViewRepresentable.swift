@@ -14,6 +14,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     let locationManager = LocationManager()
     
     func makeUIView(context: Context) -> some UIView {
+        mapView.delegate = self
         mapView.isRotateEnabled = false
         mapView.showsUserLocation = true
         mapView.userTrackingMode = .follow
