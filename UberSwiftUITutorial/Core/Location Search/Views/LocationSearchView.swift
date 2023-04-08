@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LocationSearchView: View {
     @State private var startLocationText = ""
-    @State private var destinationLocationText = ""
     @StateObject var viewModel = LocationSearchViewModel()
     
     var body: some View {
