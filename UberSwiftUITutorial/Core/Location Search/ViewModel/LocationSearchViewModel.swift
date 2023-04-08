@@ -32,9 +32,8 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     
     // MARK: - Helpers
     
-    func selectLocation(_ location: String) {
-        self.selectedLocation = location
-        print(self.selectedLocation)
+    func selectLocation(_ location: MKLocalSearchCompletion) {
+        
     }
 }
 
