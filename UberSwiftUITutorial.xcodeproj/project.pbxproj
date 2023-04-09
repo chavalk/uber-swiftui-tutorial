@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13914A29E30F1000751E4A /* MapViewState.swift */; };
 		BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */; };
 		BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A647929E08EA200EC963E /* MapViewActionButton.swift */; };
 		BE4A647C29E0909700EC963E /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A647B29E0909700EC963E /* LocationSearchView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE13914A29E30F1000751E4A /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
 		BE4A647929E08EA200EC963E /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
 		BE4A647B29E0909700EC963E /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		BEA175CF29DF2D180093BF1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BE13914A29E30F1000751E4A /* MapViewState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				BE4A648029E0CE9D00EC963E /* LocationSearchViewModel.swift in Sources */,
 				BE4A647C29E0909700EC963E /* LocationSearchView.swift in Sources */,
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
+				BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */,
 				BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */,
 				BE4A647E29E0C23100EC963E /* LocationSearchResultsCell.swift in Sources */,
 				BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */,
