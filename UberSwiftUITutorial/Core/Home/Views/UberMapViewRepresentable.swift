@@ -25,8 +25,6 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        print("DEBUG: Map state is \(mapState)")
-        
         switch mapState {
         case .noInput:
             context.coordinator.clearMapViewAndRecenterOnUserLocation()
@@ -34,7 +32,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         case .searchingForLocation:
             break
         case .locatitonSelected:
-            if let coordinate = locationViewModel.selectedLocationCoordinate {
+            if let coordinate = locationViewModel.selectedUberLocation?.coordinate {
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(withDestinationCoordinate: coordinate)
             }
