@@ -55,6 +55,17 @@ class LocationSearchViewModel: NSObject, ObservableObject {
         
         search.start(completionHandler: completion)
     }
+    
+    func computeRidePrice(forType type: RideType) -> Double {
+        guard let destCoordinate = selectedLocationCoordinate else { return 0.0 }
+        guard let userCoordinate = self.userLocation else { return 0.0 }
+        
+        let userLocation = CLLocation(latitude: userCoordinate.latitude, longitude: userCoordinate.longitude)
+        let destination = CLLocation(latitude: destCoordinate.latitude, longitude: destCoordinate.longitude)
+        
+        let tripDistanceInMeters = userLocation.distance(from: destination)
+        return type.computePrice(for: tripDistanceInMeters)
+    }
 }
 
 // MARK: - MKLocalSearchCompleterDelegate
