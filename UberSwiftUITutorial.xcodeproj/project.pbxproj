@@ -21,6 +21,7 @@
 		BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175D629DF2F910093BF1E /* HomeView.swift */; };
 		BEA175D929DF50680093BF1E /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175D829DF50680093BF1E /* UberMapViewRepresentable.swift */; };
 		BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA175DA29DF567D0093BF1E /* LocationManager.swift */; };
+		BEF04D9B29E5B253008D5F9E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04D9A29E5B253008D5F9E /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		BEA175D629DF2F910093BF1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BEA175D829DF50680093BF1E /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 		BEA175DA29DF567D0093BF1E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BEF04D9A29E5B253008D5F9E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		BEA175D129DF2D200093BF1E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BEF04D9A29E5B253008D5F9E /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				BE4A647C29E0909700EC963E /* LocationSearchView.swift in Sources */,
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
 				BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */,
+				BEF04D9B29E5B253008D5F9E /* Double.swift in Sources */,
 				BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */,
 				BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */,
 				BE4A647E29E0C23100EC963E /* LocationSearchResultsCell.swift in Sources */,
