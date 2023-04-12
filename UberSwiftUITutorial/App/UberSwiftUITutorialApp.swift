@@ -20,6 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct UberSwiftUITutorialApp: App {
     @StateObject var locationViewModel = LocationSearchViewModel()
+    @StateObject var authViewModel = AuthViewModel()
     // Register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
@@ -27,6 +28,7 @@ struct UberSwiftUITutorialApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(locationViewModel)
+                .environmentObject(authViewModel)
         }
     }
 }
