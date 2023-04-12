@@ -26,6 +26,7 @@
 		BEF04D9F29E62607008D5F9E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04D9E29E62607008D5F9E /* Color.swift */; };
 		BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA329E62FCF008D5F9E /* LoginView.swift */; };
 		BEF04DA629E62FDF008D5F9E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */; };
+		BEF04DA929E65940008D5F9E /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA829E65940008D5F9E /* CustomInputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		BEF04D9E29E62607008D5F9E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BEF04DA329E62FCF008D5F9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		BEF04DA829E65940008D5F9E /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		BEA175C029DF29470093BF1E /* UberSwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				BEF04DA729E65770008D5F9E /* ReusableItems */,
 				BEA175D329DF2D280093BF1E /* App */,
 				BEA175D229DF2D230093BF1E /* Core */,
 				BEA175D129DF2D200093BF1E /* Extensions */,
@@ -232,6 +235,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		BEF04DA729E65770008D5F9E /* ReusableItems */ = {
+			isa = PBXGroup;
+			children = (
+				BEF04DA829E65940008D5F9E /* CustomInputField.swift */,
+			);
+			path = ReusableItems;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +329,7 @@
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
 				BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */,
 				BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */,
+				BEF04DA929E65940008D5F9E /* CustomInputField.swift in Sources */,
 				BE05648429E4FA2E00746612 /* RideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
