@@ -24,6 +24,8 @@
 		BEF04D9B29E5B253008D5F9E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04D9A29E5B253008D5F9E /* Double.swift */; };
 		BEF04D9D29E5C06B008D5F9E /* UberLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04D9C29E5C06B008D5F9E /* UberLocation.swift */; };
 		BEF04D9F29E62607008D5F9E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04D9E29E62607008D5F9E /* Color.swift */; };
+		BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA329E62FCF008D5F9E /* LoginView.swift */; };
+		BEF04DA629E62FDF008D5F9E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		BEF04D9A29E5B253008D5F9E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		BEF04D9C29E5C06B008D5F9E /* UberLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLocation.swift; sourceTree = "<group>"; };
 		BEF04D9E29E62607008D5F9E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BEF04DA329E62FCF008D5F9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		BEA175D229DF2D230093BF1E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BEF04DA029E62B6E008D5F9E /* Authentication */,
 				BE13914C29E39F0500751E4A /* Trips */,
 				BE2380E729DFBC130077BCC2 /* Location Search */,
 				BE2380E629DFBBF00077BCC2 /* Home */,
@@ -200,6 +205,31 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEF04DA029E62B6E008D5F9E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BEF04DA229E62B83008D5F9E /* ViewModels */,
+				BEF04DA129E62B78008D5F9E /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BEF04DA129E62B78008D5F9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEF04DA329E62FCF008D5F9E /* LoginView.swift */,
+				BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEF04DA229E62B83008D5F9E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +307,7 @@
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
 				BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */,
 				BEF04D9B29E5B253008D5F9E /* Double.swift in Sources */,
+				BEF04DA629E62FDF008D5F9E /* RegistrationView.swift in Sources */,
 				BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */,
 				BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */,
 				BE4A647E29E0C23100EC963E /* LocationSearchResultsCell.swift in Sources */,
@@ -286,6 +317,7 @@
 				BEF04D9D29E5C06B008D5F9E /* UberLocation.swift in Sources */,
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
 				BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */,
+				BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */,
 				BE05648429E4FA2E00746612 /* RideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
