@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestoreSwift
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
@@ -33,7 +34,13 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            self.userSession = result?.user
+            guard let firebaseUser = result?.user else { return }
+            self.userSession = firebaseUser
+            
+            let user = User(fullName: fullName, email: email, uid: firebaseUser.uid)
+            guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+            
+            Firestore.firestore().collection("users").document(firebaseUser.uid).setData(encodedUser)
         }
     }
     
