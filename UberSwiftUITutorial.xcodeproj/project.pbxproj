@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE00B6A929E82D5C0036029E /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00B6A829E82D5C0036029E /* SideMenuView.swift */; };
+		BE00B6AB29E8352B0036029E /* SideMenuOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00B6AA29E8352B0036029E /* SideMenuOptionViewModel.swift */; };
+		BE00B6AD29E837090036029E /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE00B6AC29E837090036029E /* SideMenuOptionView.swift */; };
 		BE05648429E4FA2E00746612 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05648329E4FA2E00746612 /* RideType.swift */; };
 		BE0BA7E029E73A0700AD26E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0BA7DF29E73A0700AD26E5 /* GoogleService-Info.plist */; };
 		BE0BA7E329E73D4A00AD26E5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BE0BA7E229E73D4A00AD26E5 /* FirebaseAuth */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE00B6A829E82D5C0036029E /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		BE00B6AA29E8352B0036029E /* SideMenuOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionViewModel.swift; sourceTree = "<group>"; };
+		BE00B6AC29E837090036029E /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		BE05648329E4FA2E00746612 /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
 		BE0BA7DF29E73A0700AD26E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE0BA7EA29E76E7100AD26E5 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE00B6A529E82D2C0036029E /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BE00B6A729E82D450036029E /* ViewModel */,
+				BE00B6A629E82D3C0036029E /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		BE00B6A629E82D3C0036029E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE00B6A829E82D5C0036029E /* SideMenuView.swift */,
+				BE00B6AC29E837090036029E /* SideMenuOptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE00B6A729E82D450036029E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE00B6AA29E8352B0036029E /* SideMenuOptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BE13914C29E39F0500751E4A /* Trips */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +225,7 @@
 		BEA175D229DF2D230093BF1E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BE00B6A529E82D2C0036029E /* SideMenu */,
 				BEF04DA029E62B6E008D5F9E /* Authentication */,
 				BE13914C29E39F0500751E4A /* Trips */,
 				BE2380E729DFBC130077BCC2 /* Location Search */,
@@ -343,6 +376,7 @@
 				BE4A648029E0CE9D00EC963E /* LocationSearchViewModel.swift in Sources */,
 				BE4A647C29E0909700EC963E /* LocationSearchView.swift in Sources */,
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
+				BE00B6AB29E8352B0036029E /* SideMenuOptionViewModel.swift in Sources */,
 				BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */,
 				BEF04D9B29E5B253008D5F9E /* Double.swift in Sources */,
 				BEF04DA629E62FDF008D5F9E /* RegistrationView.swift in Sources */,
@@ -352,9 +386,11 @@
 				BE4A647A29E08EA200EC963E /* MapViewActionButton.swift in Sources */,
 				BE4A647E29E0C23100EC963E /* LocationSearchResultsCell.swift in Sources */,
 				BEF04D9F29E62607008D5F9E /* Color.swift in Sources */,
+				BE00B6AD29E837090036029E /* SideMenuOptionView.swift in Sources */,
 				BEA175C229DF29470093BF1E /* UberSwiftUITutorialApp.swift in Sources */,
 				BEA175D929DF50680093BF1E /* UberMapViewRepresentable.swift in Sources */,
 				BEF04D9D29E5C06B008D5F9E /* UberLocation.swift in Sources */,
+				BE00B6A929E82D5C0036029E /* SideMenuView.swift in Sources */,
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
 				BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */,
 				BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */,
