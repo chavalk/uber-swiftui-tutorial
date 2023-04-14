@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SettingsView: View {
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         VStack {
             List {
@@ -21,10 +27,10 @@ struct SettingsView: View {
                             .frame(width: 64, height: 64)
                         
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Jose Garcia")
+                            Text(user.fullName)
                                 .font(.system(size: 16, weight: .semibold))
                             
-                            Text("test@gmail.com")
+                            Text(user.email)
                                 .font(.system(size: 14))
                                 .accentColor(Color.theme.primaryTextColor)
                                 .opacity(0.77)
@@ -67,7 +73,7 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            SettingsView()
+            SettingsView(user: User(fullName: "John Doe", email: "johndoe@gmail.com", uid: "123456"))
         }
     }
 }
