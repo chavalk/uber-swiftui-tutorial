@@ -37,6 +37,7 @@ struct SettingsView: View {
                             .font(.title2)
                             .foregroundColor(.gray)
                     }
+                    .padding(8)
                 }
                 
                 Section("Favorites") {
@@ -58,11 +59,14 @@ struct SettingsView: View {
                 }
             }
         }
+        .navigationTitle("Settings")
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        NavigationStack {
+            SettingsView()
+        }
     }
 }
