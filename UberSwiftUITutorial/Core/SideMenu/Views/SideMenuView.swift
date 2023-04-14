@@ -26,7 +26,7 @@ struct SideMenuView: View {
                             
                             Text("test@gmail.com")
                                 .font(.system(size: 14))
-                                .accentColor(.black)
+                                .accentColor(Color.theme.primaryTextColor)
                                 .opacity(0.77)
                         }
                     }
