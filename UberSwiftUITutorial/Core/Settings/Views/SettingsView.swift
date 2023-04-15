@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     private let user: User
+    @EnvironmentObject var viewModel: AuthViewModel
     
     init(user: User) {
         self.user = user
@@ -62,6 +63,9 @@ struct SettingsView: View {
                     SettingsRowView(imageName: "dollarsign.circle.fill", title: "Make Money Driving", tintColor: Color(.systemGreen))
                     
                     SettingsRowView(imageName: "arrow.left.circle.fill", title: "Sign Out", tintColor: Color(.systemRed))
+                        .onTapGesture {
+                            viewModel.signOut()
+                        }
                 }
             }
         }
