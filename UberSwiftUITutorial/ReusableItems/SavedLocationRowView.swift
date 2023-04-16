@@ -22,7 +22,7 @@ struct SavedLocationRowView: View {
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundColor(Color.theme.primaryTextColor)
                 
-                Text("Add Home")
+                Text(viewModel.subtitle)
                     .font(.system(size: 14))
                     .foregroundColor(.gray)
             }

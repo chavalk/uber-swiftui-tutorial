@@ -25,5 +25,12 @@ enum SavedLocationViewModel: Int, CaseIterable, Identifiable {
         }
     }
     
+    var subtitle: String {
+        switch self {
+        case .home: return "Add Home"
+        case .work: return "Add Work"
+        }
+    }
+    
     var id: Int { return self.rawValue }
 }
