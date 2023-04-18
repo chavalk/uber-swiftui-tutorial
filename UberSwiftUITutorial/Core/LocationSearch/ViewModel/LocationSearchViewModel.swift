@@ -42,21 +42,22 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     // MARK: - Helpers
     
     func selectLocation(_ localSearch: MKLocalSearchCompletion, config: LocationResultsViewConfig) {
-        switch config {
-        case .ride:
-            locationSearch(forLocalSearchCompletion: localSearch) { response, error in
-                if let error = error {
-                    print("DEBUG: Location search failed with error \(error.localizedDescription)")
-                    return
-                }
-                
-                guard let item = response?.mapItems.first else { return }
-                let coordinate = item.placemark.coordinate
-                self.selectedUberLocation = UberLocation(title: localSearch.title, coordinate: coordinate)
-                print("DEBUG: Location coordinates \(coordinate)")
+        locationSearch(forLocalSearchCompletion: localSearch) { response, error in
+            if let error = error {
+                print("DEBUG: Location search failed with error \(error.localizedDescription)")
+                return
             }
-        case .saveLocation:
-            print("DEBUG: Saved location here...")
+            
+            guard let item = response?.mapItems.first else { return }
+            let coordinate = item.placemark.coordinate
+            
+            switch config {
+            case .ride:
+                self.selectedUberLocation = UberLocation(title: localSearch.title, coordinate: coordinate)
+                
+            case .saveLocation:
+                print("DEBUG: Saved location coordinates are \(coordinate)")
+            }
         }
     }
     
