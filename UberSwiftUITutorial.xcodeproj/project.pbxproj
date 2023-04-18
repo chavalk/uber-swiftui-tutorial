@@ -141,13 +141,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		BE2380E729DFBC130077BCC2 /* Location Search */ = {
+		BE2380E729DFBC130077BCC2 /* LocationSearch */ = {
 			isa = PBXGroup;
 			children = (
 				BE2380E829DFBC500077BCC2 /* ViewModel */,
 				BE2380E929DFBC5A0077BCC2 /* Views */,
 			);
-			path = "Location Search";
+			path = LocationSearch;
 			sourceTree = "<group>";
 		};
 		BE2380E829DFBC500077BCC2 /* ViewModel */ = {
@@ -270,7 +270,7 @@
 				BE00B6A529E82D2C0036029E /* SideMenu */,
 				BEF04DA029E62B6E008D5F9E /* Authentication */,
 				BE13914C29E39F0500751E4A /* Trips */,
-				BE2380E729DFBC130077BCC2 /* Location Search */,
+				BE2380E729DFBC130077BCC2 /* LocationSearch */,
 				BE2380E629DFBBF00077BCC2 /* Home */,
 			);
 			path = Core;
