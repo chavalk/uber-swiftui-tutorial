@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import Firebase
 
 enum LocationResultsViewConfig {
     case ride
@@ -56,7 +57,12 @@ class LocationSearchViewModel: NSObject, ObservableObject {
                 self.selectedUberLocation = UberLocation(title: localSearch.title, coordinate: coordinate)
                 
             case .saveLocation:
-                print("DEBUG: Saved location coordinates are \(coordinate)")
+                guard let uid = Auth.auth().currentUser?.uid else { return }
+                let savedLocation = SavedLocation(title: localSearch.title, address: localSearch.subtitle, coordinates: GeoPoint(latitude: coordinate.latitude, longitude: coordinate.longitude))
+                guard let encodedLocation = try? Firestore.Encoder().encode(savedLocation) else { return }
+                Firestore.firestore().collection("users").document(uid).updateData([
+                    "homeLocation": encodedLocation
+                ])
             }
         }
     }
