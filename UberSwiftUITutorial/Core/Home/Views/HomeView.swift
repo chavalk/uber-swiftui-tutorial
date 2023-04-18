@@ -72,6 +72,11 @@ extension HomeView {
                 locationViewModel.userLocation = location
             }
         }
+        .onReceive(locationViewModel.$selectedUberLocation) { location in
+            if location != nil {
+                self.mapState = .locatitonSelected
+            }
+        }
     }
 }
 
