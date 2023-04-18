@@ -45,7 +45,7 @@ extension HomeView {
                     .ignoresSafeArea()
                 
                 if mapState == .searchingForLocation {
-                    LocationSearchView(mapState: $mapState)
+                    LocationSearchView()
                 } else if mapState == .noInput {
                     LocationSearchActivationView()
                         .padding(.top, 72)
