@@ -30,6 +30,7 @@ struct UberSwiftUITutorialApp: App {
             HomeView()
                 .environmentObject(locationViewModel)
                 .environmentObject(authViewModel)
+                .environmentObject(homeViewModel)
         }
     }
 }

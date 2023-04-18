@@ -29,6 +29,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         switch mapState {
         case .noInput:
             context.coordinator.clearMapViewAndRecenterOnUserLocation()
+            print("DEBUG: Drivers in map view \(homeViewModel.drivers)")
             break
         case .searchingForLocation:
             break
