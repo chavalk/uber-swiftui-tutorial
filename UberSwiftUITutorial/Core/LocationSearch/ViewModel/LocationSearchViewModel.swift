@@ -11,7 +11,7 @@ import Firebase
 
 enum LocationResultsViewConfig {
     case ride
-    case saveLocation
+    case saveLocation(SavedLocationViewModel)
 }
 
 class LocationSearchViewModel: NSObject, ObservableObject {
@@ -56,12 +56,12 @@ class LocationSearchViewModel: NSObject, ObservableObject {
             case .ride:
                 self.selectedUberLocation = UberLocation(title: localSearch.title, coordinate: coordinate)
                 
-            case .saveLocation:
+            case .saveLocation(let viewModel):
                 guard let uid = Auth.auth().currentUser?.uid else { return }
                 let savedLocation = SavedLocation(title: localSearch.title, address: localSearch.subtitle, coordinates: GeoPoint(latitude: coordinate.latitude, longitude: coordinate.longitude))
                 guard let encodedLocation = try? Firestore.Encoder().encode(savedLocation) else { return }
                 Firestore.firestore().collection("users").document(uid).updateData([
-                    "homeLocation": encodedLocation
+                    viewModel.databaseKey: encodedLocation
                 ])
             }
         }
