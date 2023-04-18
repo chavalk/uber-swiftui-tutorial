@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 extension PreviewProvider {
     static var dev: DeveloperPreview {
@@ -16,5 +17,5 @@ extension PreviewProvider {
 class DeveloperPreview {
     static let shared = DeveloperPreview()
     
-    let mockUser = User(fullName: "Jose Garcia", email: "test@gmail.com", uid: NSUUID().uuidString, accountType: .passenger)
+    let mockUser = User(fullName: "Jose Garcia", email: "test@gmail.com", uid: NSUUID().uuidString, coordinates: GeoPoint(latitude: 37.38, longitude: -122.05), accountType: .passenger)
 }
