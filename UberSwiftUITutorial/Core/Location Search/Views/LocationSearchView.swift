@@ -61,23 +61,3 @@ struct LocationSearchView_Previews: PreviewProvider {
         LocationSearchView(mapState: .constant(.searchingForLocation))
     }
 }
-
-struct LocationSearchResultsView: View {
-    @StateObject var viewModel: LocationSearchViewModel
-    let config: LocationResultsViewConfig
-    
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                ForEach(viewModel.results, id: \.self) { result in
-                    LocationSearchResultsCell(title: result.title, subtitle: result.subtitle)
-                        .onTapGesture {
-                            withAnimation(.spring()) {
-                                viewModel.selectLocation(result, config: config)
-                            }
-                        }
-                }
-            }
-        }
-    }
-}
