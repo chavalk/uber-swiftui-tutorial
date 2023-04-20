@@ -10,12 +10,16 @@ import MapKit
 
 struct AcceptTripView: View {
     @State private var region: MKCoordinateRegion
+    let trip: Trip
     
-    init() {
-        let center = CLLocationCoordinate2D(latitude: 37.3346, longitude: -122.0090)
+    init(trip: Trip) {
+        let center = CLLocationCoordinate2D(latitude: trip.pickUpLocation.latitude, longitude: trip.pickUpLocation.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
         self.region = MKCoordinateRegion(center: center, span: span)
+        
+        self.trip = trip
     }
+    
     var body: some View {
         VStack {
             Capsule()
@@ -62,7 +66,7 @@ struct AcceptTripView: View {
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("JOSE")
+                        Text(trip.passengerName)
                             .fontWeight(.bold)
                         
                         HStack {
@@ -81,7 +85,7 @@ struct AcceptTripView: View {
                     VStack(spacing: 6) {
                         Text("Earnings")
                         
-                        Text("$22.04")
+                        Text(trip.tripCost.toCurrency())
                             .font(.system(size: 24, weight: .semibold))
                     }
                 }
@@ -96,10 +100,10 @@ struct AcceptTripView: View {
                 HStack {
                     // Address info
                     VStack(alignment: .leading, spacing: 6) {
-                        Text("Apple Campus")
+                        Text(trip.pickUpLocationName)
                             .font(.headline)
                         
-                        Text("Infinite Loop 1, Santa Clara County")
+                        Text(trip.pickUpLocationAddress)
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
