@@ -46,14 +46,6 @@ class HomeViewModel: NSObject, ObservableObject {
     
     // MARK: - User API
     
-    func fetchDrivers() {
-        Firestore.firestore().collection("users").whereField("accountType", isEqualTo: AccountType.driver.rawValue).getDocuments { snapshot, _ in
-            guard let documents = snapshot?.documents else { return }
-            let drivers = documents.compactMap({ try? $0.data(as: User.self) })
-            self.drivers = drivers
-        }
-    }
-    
     func fetchUser() {
         service.$user.sink { user in
             self.currentUser = user
@@ -72,6 +64,14 @@ class HomeViewModel: NSObject, ObservableObject {
 // MARK: Passenger API
 
 extension HomeViewModel {
+    func fetchDrivers() {
+        Firestore.firestore().collection("users").whereField("accountType", isEqualTo: AccountType.driver.rawValue).getDocuments { snapshot, _ in
+            guard let documents = snapshot?.documents else { return }
+            let drivers = documents.compactMap({ try? $0.data(as: User.self) })
+            self.drivers = drivers
+        }
+    }
+    
     func requestTrip() {
         guard let driver = drivers.first else { return }
         guard let currentUser = currentUser else { return }
