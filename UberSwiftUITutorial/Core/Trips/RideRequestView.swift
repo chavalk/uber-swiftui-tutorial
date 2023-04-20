@@ -138,7 +138,7 @@ struct RideRequestView: View {
             
             // Request ride button
             Button {
-                
+                homeViewModel.requestTrip()
             } label: {
                 Text("CONFIRM RIDE")
                     .fontWeight(.bold)
