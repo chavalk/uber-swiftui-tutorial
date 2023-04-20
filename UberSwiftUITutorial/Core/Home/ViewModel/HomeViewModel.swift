@@ -16,6 +16,7 @@ class HomeViewModel: NSObject, ObservableObject {
     // MARK: - Properties
     
     @Published var drivers = [User]()
+    @Published var trip: Trip?
     private let service = UserService.shared
     private var cancellables = Set<AnyCancellable>()
     private var currentUser: User?
@@ -102,7 +103,7 @@ extension HomeViewModel {
             guard let documents = snapshot?.documents, let document = documents.first else { return }
             guard let trip = try? document.data(as: Trip.self) else { return }
             
-            print("DEBUG: Trip request for driver is \(trip)")
+            self.trip = trip
         }
     }
 }
