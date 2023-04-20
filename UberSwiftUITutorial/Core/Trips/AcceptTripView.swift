@@ -163,6 +163,7 @@ struct AcceptTripView: View {
             .padding(.top)
             .padding(.horizontal)
         }
+        .background(Color.theme.backgroundColor)
     }
 }
 
