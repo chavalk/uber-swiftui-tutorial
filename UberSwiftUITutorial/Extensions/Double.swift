@@ -30,6 +30,6 @@ extension Double {
     }
     
     func distanceInMilesString() -> String {
-        return distanceFormatter.string(for: self) ?? ""
+        return distanceFormatter.string(for: self / 1600) ?? ""
     }
 }
