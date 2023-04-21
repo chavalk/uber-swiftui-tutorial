@@ -21,7 +21,6 @@ struct Trip: Identifiable, Codable {
     let pickUpLocation: GeoPoint
     let dropOffLocation: GeoPoint
     let tripCost: Double
-    
-    var distanceToPassenger: Double = 0.0
-    var travelTimeToPassenger: Int = 0
+    var distanceToPassenger: Double
+    var travelTimeToPassenger: Int
 }
