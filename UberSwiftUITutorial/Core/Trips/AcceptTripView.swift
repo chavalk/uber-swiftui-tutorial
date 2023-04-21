@@ -19,7 +19,7 @@ struct AcceptTripView: View {
         self.region = MKCoordinateRegion(center: center, span: span)
         
         self.trip = trip
-        self.annotationItem = UberLocation(title: trip.pickUpLocationName, coordinate: <#T##CLLocationCoordinate2D#>)
+        self.annotationItem = UberLocation(title: trip.pickUpLocationName, coordinate: trip.pickUpLocation.toCoordinate())
     }
     
     var body: some View {
