@@ -50,6 +50,7 @@
 		BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA329E62FCF008D5F9E /* LoginView.swift */; };
 		BEF04DA629E62FDF008D5F9E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */; };
 		BEF04DA929E65940008D5F9E /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF04DA829E65940008D5F9E /* CustomInputField.swift */; };
+		BEF9C99229F24A78009742E1 /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C99129F24A78009742E1 /* GeoPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		BEF04DA329E62FCF008D5F9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BEF04DA529E62FDF008D5F9E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		BEF04DA829E65940008D5F9E /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		BEF9C99129F24A78009742E1 /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				BEF04D9A29E5B253008D5F9E /* Double.swift */,
 				BEF04D9E29E62607008D5F9E /* Color.swift */,
 				BE3CABF029EEE2FF002A5D26 /* DeveloperPreview.swift */,
+				BEF9C99129F24A78009742E1 /* GeoPoint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				BE3CABF329EEF1E2002A5D26 /* HomeViewModel.swift in Sources */,
 				BE4A647C29E0909700EC963E /* LocationSearchView.swift in Sources */,
 				BEA175DB29DF567D0093BF1E /* LocationManager.swift in Sources */,
+				BEF9C99229F24A78009742E1 /* GeoPoint.swift in Sources */,
 				BE3CABF829EF279B002A5D26 /* UserService.swift in Sources */,
 				BE00B6AB29E8352B0036029E /* SideMenuOptionViewModel.swift in Sources */,
 				BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */,
