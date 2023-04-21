@@ -106,8 +106,8 @@ extension HomeViewModel {
             self.trip = trip
             
             self.getDestinationRoute(from: trip.driverLocation.toCoordinate(), to: trip.pickUpLocation.toCoordinate()) { route in
-                print("DEBUG: Expected travel time to passenger \(route.expectedTravelTime / 60)")
-                print("DEBUG: Distance from passenger \(route.distance / 1600)")
+                print("DEBUG: Expected travel time to passenger \(Int(route.expectedTravelTime / 60))")
+                print("DEBUG: Distance from passenger \(route.distance.distanceInMilesString())")
             }
         }
     }
