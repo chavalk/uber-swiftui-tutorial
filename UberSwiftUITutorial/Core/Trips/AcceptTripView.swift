@@ -126,11 +126,13 @@ struct AcceptTripView: View {
                 .padding(.horizontal)
                 
                 // Map
-                Map(coordinateRegion: $region)
-                    .frame(height: 220)
-                    .cornerRadius(10)
-                    .shadow(color: .black.opacity(0.6), radius: 10)
-                    .padding()
+                Map(coordinateRegion: $region, annotationItems: [annotationItem]) { item in
+                    
+                }
+                .frame(height: 220)
+                .cornerRadius(10)
+                .shadow(color: .black.opacity(0.6), radius: 10)
+                .padding()
                 
                 // Divider
                 Divider()
