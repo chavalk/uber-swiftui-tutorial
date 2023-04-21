@@ -68,7 +68,7 @@ extension HomeView {
             }
             
             if let trip = homeViewModel.trip {
-                AcceptTripView()
+                AcceptTripView(trip: trip)
                     .transition(.move(edge: .bottom))
             }
         }

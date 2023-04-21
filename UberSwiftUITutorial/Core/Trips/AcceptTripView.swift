@@ -173,6 +173,6 @@ struct AcceptTripView: View {
 
 struct AcceptTripView_Previews: PreviewProvider {
     static var previews: some View {
-        AcceptTripView()
+        AcceptTripView(trip: dev.mockTrip)
     }
 }
