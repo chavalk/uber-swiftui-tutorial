@@ -11,6 +11,7 @@ import MapKit
 struct AcceptTripView: View {
     @State private var region: MKCoordinateRegion
     let trip: Trip
+    let annotationItem: UberLocation
     
     init(trip: Trip) {
         let center = CLLocationCoordinate2D(latitude: trip.pickUpLocation.latitude, longitude: trip.pickUpLocation.longitude)
@@ -18,6 +19,7 @@ struct AcceptTripView: View {
         self.region = MKCoordinateRegion(center: center, span: span)
         
         self.trip = trip
+        self.annotationItem = UberLocation(title: trip.pickUpLocationName, coordinate: <#T##CLLocationCoordinate2D#>)
     }
     
     var body: some View {
