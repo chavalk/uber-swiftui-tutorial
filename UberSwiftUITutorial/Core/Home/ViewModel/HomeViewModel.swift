@@ -83,7 +83,23 @@ extension HomeViewModel {
         getPlacemark(forLocation: userLocation) { placemark, error in
             guard let placemark = placemark else { return }
             
-            let trip = Trip(id: NSUUID().uuidString, passengerUid: currentUser.uid, driverUid: driver.uid, passengerName: currentUser.fullName, driverName: driver.fullName, passengerLocation: currentUser.coordinates, driverLocation: driver.coordinates, pickUpLocationName: placemark.name ?? "Current Location", dropOffLocationName: dropOffLocation.title, pickUpLocationAddress: "123 Main St", pickUpLocation: currentUser.coordinates, dropOffLocation: dropOffGeoPoint, tripCost: 50.0)
+            let trip = Trip(
+                id: NSUUID().uuidString,
+                passengerUid: currentUser.uid,
+                driverUid: driver.uid,
+                passengerName: currentUser.fullName,
+                driverName: driver.fullName,
+                passengerLocation: currentUser.coordinates,
+                driverLocation: driver.coordinates,
+                pickUpLocationName: placemark.name ?? "Current Location",
+                dropOffLocationName: dropOffLocation.title,
+                pickUpLocationAddress: "123 Main St",
+                pickUpLocation: currentUser.coordinates,
+                dropOffLocation: dropOffGeoPoint,
+                tripCost: 50.0,
+                distanceToPassenger: 1000,
+                travelTimeToPassenger: 24
+            )
             
             guard let encodedTrip = try? Firestore.Encoder().encode(trip) else { return }
             Firestore.firestore().collection("trips").document().setData(encodedTrip) { _ in
