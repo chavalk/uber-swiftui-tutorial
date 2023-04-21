@@ -127,7 +127,7 @@ struct AcceptTripView: View {
                 
                 // Map
                 Map(coordinateRegion: $region, annotationItems: [annotationItem]) { item in
-                    
+                    MapMarker(coordinate: item.coordinate)
                 }
                 .frame(height: 220)
                 .cornerRadius(10)
