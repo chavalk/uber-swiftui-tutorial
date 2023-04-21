@@ -42,7 +42,7 @@ struct AcceptTripView: View {
                     Spacer()
                     
                     VStack {
-                        Text("10")
+                        Text("\(trip.travelTimeToPassenger)")
                             .bold()
                         
                         Text("min")
@@ -114,7 +114,7 @@ struct AcceptTripView: View {
                     
                     // Distance
                     VStack {
-                        Text("5.2")
+                        Text(trip.distanceToPassenger.distanceInMilesString())
                             .font(.headline)
                             .fontWeight(.semibold)
                         
