@@ -83,6 +83,8 @@ extension HomeViewModel {
         getPlacemark(forLocation: userLocation) { placemark, error in
             guard let placemark = placemark else { return }
             
+            let tripCost = self.computeRidePrice(forType: .uberX)
+            
             let trip = Trip(
                 id: NSUUID().uuidString,
                 passengerUid: currentUser.uid,
@@ -96,9 +98,9 @@ extension HomeViewModel {
                 pickUpLocationAddress: "123 Main St",
                 pickUpLocation: currentUser.coordinates,
                 dropOffLocation: dropOffGeoPoint,
-                tripCost: 50.0,
-                distanceToPassenger: 1000,
-                travelTimeToPassenger: 24
+                tripCost: tripCost,
+                distanceToPassenger: 0,
+                travelTimeToPassenger: 0
             )
             
             guard let encodedTrip = try? Firestore.Encoder().encode(trip) else { return }
