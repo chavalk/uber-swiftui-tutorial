@@ -18,7 +18,6 @@ class DeveloperPreview {
     static let shared = DeveloperPreview()
     
     let mockTrip = Trip(
-        id: NSUUID().uuidString,
         passengerUid: NSUUID().uuidString,
         driverUid: NSUUID().uuidString,
         passengerName: "Jose Garcia",

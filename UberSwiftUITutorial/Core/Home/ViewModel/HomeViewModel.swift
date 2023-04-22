@@ -86,7 +86,6 @@ extension HomeViewModel {
             let tripCost = self.computeRidePrice(forType: .uberX)
             
             let trip = Trip(
-                id: NSUUID().uuidString,
                 passengerUid: currentUser.uid,
                 driverUid: driver.uid,
                 passengerName: currentUser.fullName,
