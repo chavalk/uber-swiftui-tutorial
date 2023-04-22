@@ -130,6 +130,23 @@ extension HomeViewModel {
             }
         }
     }
+    
+    func rejectTrip() {
+        updateTripState(state: .rejected)
+    }
+    
+    func acceptTrip() {
+        updateTripState(state: .accepted)
+    }
+    
+    private func updateTripState(state: TripState) {
+        guard let trip = trip else { return }
+        Firestore.firestore().collection("trips").document(trip.id).updateData([
+            "state": state.rawValue
+        ]) { _ in
+            print("DEBUG: Did update trip state with state \(state)")
+        }
+    }
 }
 
 // MARK: - Location Search Helpers
