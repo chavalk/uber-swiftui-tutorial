@@ -7,6 +7,12 @@
 
 import Firebase
 
+enum TripState: Int, Codable {
+    case requested
+    case rejected
+    case accepted
+}
+
 struct Trip: Identifiable, Codable {
     let id: String
     let passengerUid: String
@@ -23,4 +29,5 @@ struct Trip: Identifiable, Codable {
     let tripCost: Double
     var distanceToPassenger: Double
     var travelTimeToPassenger: Int
+    var state: TripState
 }

@@ -100,7 +100,8 @@ extension HomeViewModel {
                 dropOffLocation: dropOffGeoPoint,
                 tripCost: tripCost,
                 distanceToPassenger: 0,
-                travelTimeToPassenger: 0
+                travelTimeToPassenger: 0,
+                state: .requested
             )
             
             guard let encodedTrip = try? Firestore.Encoder().encode(trip) else { return }
