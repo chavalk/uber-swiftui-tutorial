@@ -144,13 +144,29 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BE13914C29E39F0500751E4A /* Trips */ = {
+		BE1282E529F5EE9E006A5AF5 /* Passengers */ = {
 			isa = PBXGroup;
 			children = (
 				BE13914D29E39FB600751E4A /* RideRequestView.swift */,
-				BE3CABF929EF6C16002A5D26 /* AcceptTripView.swift */,
 				BE100FB329F4F82900C052B1 /* TripLoadingView.swift */,
 				BE100FB529F4F9C200C052B1 /* TripAcceptedView.swift */,
+			);
+			path = Passengers;
+			sourceTree = "<group>";
+		};
+		BE1282E629F5EEA1006A5AF5 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				BE3CABF929EF6C16002A5D26 /* AcceptTripView.swift */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		BE13914C29E39F0500751E4A /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				BE1282E629F5EEA1006A5AF5 /* Drivers */,
+				BE1282E529F5EE9E006A5AF5 /* Passengers */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
