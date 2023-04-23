@@ -16,16 +16,9 @@ struct TripLoadingView: View {
                 .padding(.top, 8)
             
             HStack {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Connecting you to a driver")
-                        .font(.headline)
-                    
-                    Text("Arriving at 1:30 PM")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color(.systemBlue))
-                }
-                .padding()
+                Text("Connecting you to a driver")
+                    .font(.headline)
+                    .padding()
                 
                 Spacer()
                 
