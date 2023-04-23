@@ -62,14 +62,18 @@ extension HomeView {
                     .padding(.top, 4)
             }
             
-            if mapState == .locatitonSelected || mapState == .polylineAdded {
-                RideRequestView()
-                    .transition(.move(edge: .bottom))
-            }
-            
-            if let trip = homeViewModel.trip {
-                AcceptTripView(trip: trip)
-                    .transition(.move(edge: .bottom))
+            if let user = authViewModel.currentUser {
+                if user.accountType == .passenger {
+                    if mapState == .locatitonSelected || mapState == .polylineAdded {
+                        RideRequestView()
+                            .transition(.move(edge: .bottom))
+                    }
+                } else {
+                    if let trip = homeViewModel.trip {
+                        AcceptTripView(trip: trip)
+                            .transition(.move(edge: .bottom))
+                    }
+                }
             }
         }
         .edgesIgnoringSafeArea(.bottom)
