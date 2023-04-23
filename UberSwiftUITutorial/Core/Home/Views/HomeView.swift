@@ -98,13 +98,15 @@ extension HomeView {
         .onReceive(homeViewModel.$trip) { trip in
             guard let trip = trip else { return }
             
-            switch trip.state {
-            case .requested:
-                self.mapState = .tripRequested
-            case .rejected:
-                self.mapState = .tripRejected
-            case .accepted:
-                self.mapState = .tripAccepted
+            withAnimation(.spring()) {
+                switch trip.state {
+                case .requested:
+                    self.mapState = .tripRequested
+                case .rejected:
+                    self.mapState = .tripRejected
+                case .accepted:
+                    self.mapState = .tripAccepted
+                }
             }
         }
     }
