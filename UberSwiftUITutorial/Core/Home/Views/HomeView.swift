@@ -68,9 +68,11 @@ extension HomeView {
                         RideRequestView()
                             .transition(.move(edge: .bottom))
                     } else if mapState == .tripRequested {
-                        // Show trip loading view
+                        TripLoadingView()
+                            .transition(.move(edge: .bottom))
                     } else if mapState == .tripAccepted {
-                        // Show trip accepted view
+                        TripAcceptedView()
+                            .transition(.move(edge: .bottom))
                     } else if mapState == .tripRejected {
                         // Show rejection view
                     }
