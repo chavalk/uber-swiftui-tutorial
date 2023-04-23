@@ -28,7 +28,11 @@ struct TripLoadingView: View {
                 .padding()
                 
                 Spacer()
+                
+                Spinner(lineWidth: 6, height: 64, width: 64)
+                    .padding()
             }
+            .padding(.bottom, 24)
         }
         .background(Color.theme.backgroundColor)
         .cornerRadius(16)

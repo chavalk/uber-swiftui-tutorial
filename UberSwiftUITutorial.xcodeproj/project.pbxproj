@@ -20,6 +20,7 @@
 		BE0BA7ED29E790DF00AD26E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BA7EC29E790DF00AD26E5 /* User.swift */; };
 		BE100FB429F4F82900C052B1 /* TripLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE100FB329F4F82900C052B1 /* TripLoadingView.swift */; };
 		BE100FB629F4F9C200C052B1 /* TripAcceptedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE100FB529F4F9C200C052B1 /* TripAcceptedView.swift */; };
+		BE1282E429F59C3E006A5AF5 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1282E329F59C3E006A5AF5 /* Spinner.swift */; };
 		BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13914A29E30F1000751E4A /* MapViewState.swift */; };
 		BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13914D29E39FB600751E4A /* RideRequestView.swift */; };
 		BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */; };
@@ -65,6 +66,7 @@
 		BE0BA7EC29E790DF00AD26E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE100FB329F4F82900C052B1 /* TripLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLoadingView.swift; sourceTree = "<group>"; };
 		BE100FB529F4F9C200C052B1 /* TripAcceptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAcceptedView.swift; sourceTree = "<group>"; };
+		BE1282E329F59C3E006A5AF5 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		BE13914A29E30F1000751E4A /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		BE13914D29E39FB600751E4A /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 		BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				BE8D28A829E99C6200387ABE /* SavedLocationRowView.swift */,
 				BE8D28AA29E9A43400387ABE /* SettingsRowView.swift */,
 				BE8D28B029EE2EDA00387ABE /* LocationSearchResultsView.swift */,
+				BE1282E329F59C3E006A5AF5 /* Spinner.swift */,
 			);
 			path = ReusableItems;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */,
 				BEF04DA929E65940008D5F9E /* CustomInputField.swift in Sources */,
 				BE05648429E4FA2E00746612 /* RideType.swift in Sources */,
+				BE1282E429F59C3E006A5AF5 /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
