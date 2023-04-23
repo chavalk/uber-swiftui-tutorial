@@ -67,6 +67,12 @@ extension HomeView {
                     if mapState == .locatitonSelected || mapState == .polylineAdded {
                         RideRequestView()
                             .transition(.move(edge: .bottom))
+                    } else if mapState == .tripRequested {
+                        // Show trip loading view
+                    } else if mapState == .tripAccepted {
+                        // Show trip accepted view
+                    } else if mapState == .tripRejected {
+                        // Show rejection view
                     }
                 } else {
                     if let trip = homeViewModel.trip {
