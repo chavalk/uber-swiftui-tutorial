@@ -83,6 +83,18 @@ extension HomeView {
                 self.mapState = .locatitonSelected
             }
         }
+        .onReceive(homeViewModel.$trip) { trip in
+            guard let trip = trip else { return }
+            
+            switch trip.state {
+            case .requested:
+                print("DEBUG: Requested trip")
+            case .rejected:
+                print("DEBUG: Rejected trip")
+            case .accepted:
+                print("DEBUG: Accepted trip")
+            }
+        }
     }
 }
 
