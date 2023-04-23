@@ -74,7 +74,7 @@ extension HomeViewModel {
             guard let change = snapshot?.documentChanges.first, change.type == .added || change.type == .modified else { return }
             
             guard let trip = try? change.document.data(as: Trip.self) else { return }
-            
+            self.trip = trip
             print("DEBUG: Updated trip state is \(trip.state)")
         }
     }
