@@ -92,11 +92,11 @@ extension HomeView {
             
             switch trip.state {
             case .requested:
-                print("DEBUG: Requested trip")
+                self.mapState = .tripRequested
             case .rejected:
-                print("DEBUG: Rejected trip")
+                self.mapState = .tripRejected
             case .accepted:
-                print("DEBUG: Accepted trip")
+                self.mapState = .tripAccepted
             }
         }
     }
