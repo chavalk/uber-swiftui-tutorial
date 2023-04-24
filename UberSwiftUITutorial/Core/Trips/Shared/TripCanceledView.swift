@@ -17,7 +17,7 @@ struct TripCanceledView: View {
                 .frame(width: 48, height: 6)
                 .padding(.top, 8)
             
-            Text("You canceled the trip")
+            Text(viewModel.tripCanceledMessage)
                 .font(.headline)
                 .padding(.vertical)
             

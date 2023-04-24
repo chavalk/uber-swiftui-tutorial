@@ -48,6 +48,26 @@ class HomeViewModel: NSObject, ObservableObject {
     
     // MARK: - Helpers
     
+    var tripCanceledMessage: String {
+        guard let user = currentUser, let trip = trip else { return "" }
+        
+        if user.accountType == .passenger {
+            if trip.state == .driverCanceled {
+                return "Your driver canceled this trip"
+            } else if trip.state == .passengerCanceled {
+                return "Your trip has been canceled"
+            }
+        } else {
+            if trip.state == .driverCanceled {
+                return "Your trip has been canceled"
+            } else if trip.state == .passengerCanceled {
+                return "The trip has been canceled by the passenger"
+            }
+        }
+        
+        return ""
+    }
+    
     func viewForState(_ state: MapViewState, user: User) -> some View {
         switch state {
         case .polylineAdded, .locatitonSelected:
