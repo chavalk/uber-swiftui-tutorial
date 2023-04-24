@@ -68,10 +68,8 @@ class HomeViewModel: NSObject, ObservableObject {
                     return AnyView(PickUpPassengerView(trip: trip))
                 }
             }
-        case .tripCanceledByPassenger:
-            return AnyView(Text("Trip canceled by passenger"))
-        case .tripCanceledByDriver:
-            return AnyView(Text("Trip canceled by driver"))
+        case .tripCanceledByPassenger, .tripCanceledByDriver:
+            return AnyView(TripCanceledView())
         default:
             break
         }

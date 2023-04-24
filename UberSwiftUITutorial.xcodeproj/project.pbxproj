@@ -25,6 +25,7 @@
 		BE13914B29E30F1000751E4A /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13914A29E30F1000751E4A /* MapViewState.swift */; };
 		BE13914E29E39FB600751E4A /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13914D29E39FB600751E4A /* RideRequestView.swift */; };
 		BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */; };
+		BE281CB529F6E1EC00A684BC /* TripCanceledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE281CB429F6E1EC00A684BC /* TripCanceledView.swift */; };
 		BE3CABF129EEE2FF002A5D26 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CABF029EEE2FF002A5D26 /* DeveloperPreview.swift */; };
 		BE3CABF329EEF1E2002A5D26 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CABF229EEF1E2002A5D26 /* HomeViewModel.swift */; };
 		BE3CABF529EF18AC002A5D26 /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CABF429EF18AC002A5D26 /* DriverAnnotation.swift */; };
@@ -72,6 +73,7 @@
 		BE13914A29E30F1000751E4A /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		BE13914D29E39FB600751E4A /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 		BE2380EA29DFBC970077BCC2 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
+		BE281CB429F6E1EC00A684BC /* TripCanceledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCanceledView.swift; sourceTree = "<group>"; };
 		BE3CABF029EEE2FF002A5D26 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		BE3CABF229EEF1E2002A5D26 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BE3CABF429EF18AC002A5D26 /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		BE13914C29E39F0500751E4A /* Trips */ = {
 			isa = PBXGroup;
 			children = (
+				BE281CB329F6E1D000A684BC /* Shared */,
 				BE1282E629F5EEA1006A5AF5 /* Drivers */,
 				BE1282E529F5EE9E006A5AF5 /* Passengers */,
 			);
@@ -209,6 +212,14 @@
 				BE8D28AE29EBA92600387ABE /* SavedLocationSearchView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BE281CB329F6E1D000A684BC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BE281CB429F6E1EC00A684BC /* TripCanceledView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		BE3CABF629EF2785002A5D26 /* Services */ = {
@@ -511,6 +522,7 @@
 				BEF04D9D29E5C06B008D5F9E /* UberLocation.swift in Sources */,
 				BE00B6A929E82D5C0036029E /* SideMenuView.swift in Sources */,
 				BEA175D729DF2F910093BF1E /* HomeView.swift in Sources */,
+				BE281CB529F6E1EC00A684BC /* TripCanceledView.swift in Sources */,
 				BE2380EB29DFBC970077BCC2 /* LocationSearchActivationView.swift in Sources */,
 				BEF04DA429E62FCF008D5F9E /* LoginView.swift in Sources */,
 				BEF04DA929E65940008D5F9E /* CustomInputField.swift in Sources */,
