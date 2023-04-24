@@ -62,6 +62,20 @@ class HomeViewModel: NSObject, ObservableObject {
         }
         .store(in: &cancellables)
     }
+    
+    private func updateTripState(state: TripState) {
+        guard let trip = trip else { return }
+        
+        var data = ["state": state.rawValue]
+        
+        if state == .accepted {
+            data["travelTimeToPassenger"] = trip.travelTimeToPassenger
+        }
+        
+        Firestore.firestore().collection("trips").document(trip.id).updateData(data) { _ in
+            print("DEBUG: Did update trip state with state \(state)")
+        }
+    }
 }
 
 // MARK: Passenger API
@@ -124,6 +138,10 @@ extension HomeViewModel {
             }
         }
     }
+    
+    func cancelTripAsPassenger() {
+        updateTripState(state: .passengerCanceled)
+    }
 }
 
 // MARK: Driver API
@@ -165,18 +183,8 @@ extension HomeViewModel {
         updateTripState(state: .accepted)
     }
     
-    private func updateTripState(state: TripState) {
-        guard let trip = trip else { return }
-        
-        var data = ["state": state.rawValue]
-        
-        if state == .accepted {
-            data["travelTimeToPassenger"] = trip.travelTimeToPassenger
-        }
-        
-        Firestore.firestore().collection("trips").document(trip.id).updateData(data) { _ in
-            print("DEBUG: Did update trip state with state \(state)")
-        }
+    func cancelTripAsDriver() {
+        updateTripState(state: .driverCanceled)
     }
 }
 
