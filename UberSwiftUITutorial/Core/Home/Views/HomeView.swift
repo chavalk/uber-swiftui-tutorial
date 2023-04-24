@@ -63,30 +63,8 @@ extension HomeView {
             }
             
             if let user = authViewModel.currentUser {
-                if user.accountType == .passenger {
-                    if mapState == .locatitonSelected || mapState == .polylineAdded {
-                        RideRequestView()
-                            .transition(.move(edge: .bottom))
-                    } else if mapState == .tripRequested {
-                        TripLoadingView()
-                            .transition(.move(edge: .bottom))
-                    } else if mapState == .tripAccepted {
-                        TripAcceptedView()
-                            .transition(.move(edge: .bottom))
-                    } else if mapState == .tripRejected {
-                        // Show rejection view
-                    }
-                } else {
-                    if let trip = homeViewModel.trip {
-                        if mapState == .tripRequested {
-                            AcceptTripView(trip: trip)
-                                .transition(.move(edge: .bottom))
-                        } else if mapState == .tripAccepted {
-                            PickUpPassengerView(trip: trip)
-                                .transition(.move(edge: .bottom))
-                        }
-                    }
-                }
+                homeViewModel.viewForState(mapState, user: user)
+                    .transition(.move(edge: .bottom))
             }
         }
         .edgesIgnoringSafeArea(.bottom)

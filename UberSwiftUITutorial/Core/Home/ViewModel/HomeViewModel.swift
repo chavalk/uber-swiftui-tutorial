@@ -46,6 +46,39 @@ class HomeViewModel: NSObject, ObservableObject {
         searchCompleter.queryFragment = queryFragment
     }
     
+    // MARK: - Helpers
+    
+    func viewForState(_ state: MapViewState, user: User) -> some View {
+        switch state {
+        case .polylineAdded, .locatitonSelected:
+            return AnyView(RideRequestView())
+        case .tripRequested:
+            if user.accountType == .passenger {
+                return AnyView(TripLoadingView())
+            } else {
+                if let trip = self.trip {
+                    return AnyView(AcceptTripView(trip: trip))
+                }
+            }
+        case .tripAccepted:
+            if user.accountType == .passenger {
+                return AnyView(TripAcceptedView())
+            } else {
+                if let trip = self.trip {
+                    return AnyView(PickUpPassengerView(trip: trip))
+                }
+            }
+        case .tripCanceledByPassenger:
+            return AnyView(Text("Trip canceled by passenger"))
+        case .tripCanceledByDriver:
+            return AnyView(Text("Trip canceled by driver"))
+        default:
+            break
+        }
+        
+        return AnyView(Text(""))
+    }
+    
     // MARK: - User API
     
     func fetchUser() {
