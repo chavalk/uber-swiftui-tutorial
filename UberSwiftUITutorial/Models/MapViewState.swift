@@ -15,4 +15,6 @@ enum MapViewState {
     case tripRequested
     case tripRejected
     case tripAccepted
+    case tripCanceledByPassenger
+    case tripCanceledByDriver
 }
