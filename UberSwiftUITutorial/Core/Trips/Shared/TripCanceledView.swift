@@ -22,7 +22,22 @@ struct TripCanceledView: View {
                 .padding(.vertical)
             
             Button {
+                guard let user = viewModel.currentUser else { return }
+                guard let trip = viewModel.trip else { return }
                 
+                if user.accountType == .passenger {
+                    if trip.state == .driverCanceled {
+                        viewModel.deleteTrip()
+                    } else if trip.state == .passengerCanceled {
+                        viewModel.trip = nil
+                    }
+                } else {
+                    if trip.state == .passengerCanceled {
+                        viewModel.deleteTrip()
+                    } else if trip.state == .driverCanceled {
+                        viewModel.trip = nil
+                    }
+                }
             } label: {
                 Text("OK")
                     .fontWeight(.bold)

@@ -127,6 +127,14 @@ class HomeViewModel: NSObject, ObservableObject {
             print("DEBUG: Did update trip state with state \(state)")
         }
     }
+    
+    func deleteTrip() {
+        guard let trip = trip else { return }
+        
+        Firestore.firestore().collection("trips").document(trip.id).delete { _ in
+            self.trip = nil
+        }
+    }
 }
 
 // MARK: Passenger API
